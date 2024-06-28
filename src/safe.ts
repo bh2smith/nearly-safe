@@ -194,7 +194,7 @@ type DeploymentFunction = (filter?: {
   | undefined;
 type DeploymentArgs = { provider: ethers.JsonRpcProvider; version: string };
 
-async function getDeployment(
+export async function getDeployment(
   fn: DeploymentFunction,
   { provider, version }: DeploymentArgs,
 ) {
